@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding : 0px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------- shop head ---------- */
+ 
+.menu-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.shop-head, .shop-desserts, .shop-beverages{
+  height: 4rem;
+  width: 81rem;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.781);
+  color: #fdffffd8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-head h2, .shop-desserts h2, .shop-beverages h2{
+  font-size: 2.5rem;
+}
+
+.culinary-section, .desserts-section, .beverages-section{
+  height: 80rem;
+  width: 81rem;
+  background-color: #ac8d7963;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.box{
+  height: 25rem;
+  width: 22rem;
+  background-color: aliceblue;
+  padding: 1rem;
+}
+
+.box img{
+  height: 15rem;
+  width: 20rem;
+}
+
+.box h2,h4,p{
+  margin-top: 0.5rem;
+}
+
+.box i{
+  position: relative;
+  left: 5rem;
+  top: -1.4rem;
+  color: #fff;
+  background-color: rgb(77, 131, 124);
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
