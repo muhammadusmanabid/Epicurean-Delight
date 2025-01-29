@@ -1,0 +1,356 @@
+*{
+    margin: 0px;
+    padding : 0px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;  
+  background: linear-gradient(to bottom, #4b3b47, #826F64, #B89F84, #D4C0A1);
+}
+
+header{
+ height: 35rem;
+ width: 81rem;
+ background-image: url("REsturaunt\ image.jpg") ;
+ background-position: center;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+.container{
+  margin: 1rem 0 0 0rem;
+}
+
+
+.container a{
+  margin-left: 9rem;
+  color: #fdffffd8;
+  text-decoration: none;
+  font-size: 1.5rem;
+} 
+
+
+.quote{
+  position: absolute;
+  top: 14rem;
+  left: 8rem;
+  color: #fdffffd8;
+}
+
+.quote h1{
+  font-size: 3rem;
+}
+
+.quote h4{
+  font-size: 1.5rem;
+}
+
+/* ----------- Three div -------------- */
+.three-div{
+  height: 80rem;
+  width: 81rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box4{
+  height: 70rem;
+  width: 50rem;
+  background-color: blue;
+  margin: 1rem;
+  border-top-left-radius: 8rem;
+  border-bottom-right-radius: 8rem;
+}
+
+.d1{
+  background-image: url('image\ copy\ 5.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.d2{
+  background-image: url('image\ copy\ 6.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.d3{
+  background-image: url('REsturaunt\ image.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.d1 h1,.para,button, .d2 h1,.para,button, .d3 h1,.para,button{
+  position: relative;
+  top: 3rem;
+  left: 7rem;
+  margin: 1.5rem 0;
+  font-size: 3rem;
+  color: #fdffffd8;
+}
+
+.d1 .para, .d2 .para, .d3 .para{
+  font-size: 2rem;
+}
+
+.d1 h1,.para, .d2 h1,.para, .d3 h1,.para{
+  transform: rotate(-15deg);
+}
+
+.d1 button, .d2 button, .d3 button{
+  padding: 0.85rem;
+  color:rgba(255, 255, 255, 0.801);
+  background-color: #92d1d1d8;
+  font-size: 1.2rem;
+  border-radius: 1.2rem;
+  margin: 5rem 0 0 2rem;
+  outline: 0;
+  border: none;
+  transition: transform 0s linear;
+  
+}
+
+.d1 button:hover, .d2 button:hover, .d3 button:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* ---------- panel3 ----------  */
+.panel3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  color: #fdffffd8;
+}
+
+.header-content {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header-content h2 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+}
+
+.caro-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 80rem;
+  height: 20rem;
+}
+
+.box-panel3{
+  height: 15rem;
+  width: 23rem;
+  color: #fdffffd8;
+  background-color: #ac8d7963;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+}
+
+.box-panel3:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s linear;
+}
+
+.customer{
+  height: 6rem;
+  width: 6.5rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5rem;
+}
+
+.box-panel3 h4{
+  margin: -4rem 0 0 7rem;
+}
+
+.box-panel3 h5{
+  margin: 0.5rem 0 0 7rem;
+}
+
+.box-panel3 p{
+  margin: 1.6rem 0 0 0;
+}
+
+.box-panel3:hover{
+  animation: bounceIn 
+} 
+
+.foot-panel{
+  height: 15rem;
+  width: 81rem;
+  background-color: #ac8d7963;
+  color: #fdffffd8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.foot-panel ul{
+  list-style-type: none;
+  margin-top: 3rem;
+}
+
+.foot-panel p{
+  font-size: 1.5rem;
+}
+
+.foot-panel h2{
+  margin-top: 3.8rem;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+}
+
+.foot-panel i{
+  margin-left: 1rem;
+  color: #fdffffd8;
+}
+
+.foot-panel i:hover{
+  color:blue;
+}
+
+.foot-panel ul li:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  header {
+      width: 100%;
+  }
+
+  .three-div {
+      width: 100%;
+  }
+
+  .box4 {
+      width: 90%;
+      height: 50%; /* Allow height to adjust based on content */
+  }
+
+  .quote {
+      left: 5rem; /* Adjust positioning */
+      top: 10rem; /* Adjust positioning */
+  }
+
+  .quote h1 {
+      font-size: 2.5rem; /* Adjust font size */
+  }
+
+  .quote h4 {
+      font-size: 1.2rem; /* Adjust font size */
+  }
+
+  .foot-panel {
+      flex-direction: column; /* Stack footer items */
+      align-items: center; /* Center footer items */
+  }
+
+  .foot-panel ul {
+      margin: 1rem 0; /* Add margin for spacing */
+  }
+}
+
+@media (max-width: 768px) {
+  .container a {
+      margin-left: 2rem; /* Adjust margin for smaller screens */
+      font-size: 1.2rem; /* Adjust font size */
+  }
+
+  .quote {
+      left: 2rem; /* Adjust positioning */
+      top: 8rem; /* Adjust positioning */
+  }
+
+  .three-div {
+      flex-direction: column; /* Stack boxes vertically */
+      align-items: center; /* Center boxes */
+  }
+
+  .box4 {
+      width: 95%; /* Full width for smaller screens */
+      margin: 1rem 0; /* Add margin for spacing */
+  }
+
+  .d1 h1, .d2 h1, .d3 h1, .para, button {
+      left: 5rem; /* Adjust positioning */
+      font-size: 2rem; /* Adjust font size */
+  }
+
+  .d1 .para, .d2 .para, .d3 .para {
+      font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .foot-panel {
+      flex-direction: column; /* Stack footer items */
+      align-items: center; /* Center footer items */
+  }
+
+  .foot-panel h2 {
+      font-size: 1.2rem; /* Adjust font size */
+  }
+
+  .foot-panel p {
+      font-size: 1rem; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .quote h1 {
+      font-size: 1.8rem; /* Further adjust font size */
+  }
+
+  .quote h4 {
+      font-size: 1rem; /* Further adjust font size */
+  }
+
+  .header-content h1 {
+      font-size: 2rem; /* Adjust font size */
+  }
+
+  .header-content h2 {
+      font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .box-panel3 {
+      width: 50%; /* Full width for smaller screens */
+      margin: 1rem 0; /* Add margin for spacing */
+  }
+  .customer {
+      height: 4rem; /* Adjust height */
+      width: 4rem; /* Adjust width */
+  }
+
+  .box-panel3 h4, .box-panel3 h5 {
+      margin-left: 5rem; /* Adjust margin */
+  }
+
+  .foot-panel ul {
+    margin-top: 40rem;
+      text-align: center; /* Center footer items */
+  }
+}
